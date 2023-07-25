@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 /**
  *
  * @author ynkax25
@@ -18,8 +19,9 @@ public class Koneksi {
     private String username = "root";
     private String password = "";
     
-    public Connection getKoneksi()throws ClassNotFoundException, SQLException{
-        Class .forName("com.mysql.jdbc.Driver");
-        return DriverManager.getConnection(url,username,password);
+    public Connection getKoneksi() throws ClassNotFoundException, SQLException{
+        Class.forName("com.mysql.jdbc.Driver");
+        return DriverManager.getConnection(url, username, password);
     }
+
 }
